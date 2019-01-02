@@ -19,3 +19,26 @@ Box addresses
 ```
 (Get-NetIPAddress).IPAddress
 ```
+
+
+=============================================
+
+
+
+Edit the sshd_config file located at %ProgramData%\ssh.
+
+Make sure password authentication is enabled
+
+
+PasswordAuthentication yes
+
+
+mklink /D c:\pwsh "C:\Program Files\PowerShell\6"
+and then enter it in the subsystem:
+
+
+Subsystem    powershell c:\pwsh\pwsh.exe -sshs -NoLogo -NoProfile
+
+
+Copy
+PubkeyAuthentication yes
