@@ -45,3 +45,6 @@ choco install git.install
 
 choco install jq
 
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/voronenko-p/win-gitlab-runner/master/ConfigureRemotingForAnsible.ps1'))
+
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/voronenko-p/win-gitlab-runner/master/GetPowershell6LinuxRemoting.ps1'))
