@@ -42,3 +42,10 @@ Subsystem    powershell c:\pwsh\pwsh.exe -sshs -NoLogo -NoProfile
 
 Copy
 PubkeyAuthentication yes
+
+
+==================================================
+
+
+$session = New-PSSession -HostName 192.168.2.145 -UserName Administrator
+Enter-PSSession $session
